@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 60% 4%;
+    --foreground: 180 20% 88%;
+
+    --card: 216 50% 7%;
+    --card-foreground: 180 20% 88%;
+
+    --popover: 216 50% 7%;
+    --popover-foreground: 180 20% 88%;
+
+    --primary: 168 100% 48%;
+    --primary-foreground: 216 60% 4%;
+
+    --secondary: 216 40% 12%;
+    --secondary-foreground: 180 15% 75%;
+
+    --muted: 216 30% 14%;
+    --muted-foreground: 200 15% 50%;
+
+    --accent: 168 100% 48%;
+    --accent-foreground: 216 60% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 30% 14%;
+    --input: 200 30% 14%;
+    --ring: 168 100% 48%;
+
+    --radius: 0.5rem;
+
+    --glow: 168 100% 48%;
+    --glow-muted: 168 80% 35%;
+    --surface-glass: 216 40% 8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Rajdhani', system-ui, sans-serif;
+    background-color: hsl(216 60% 4%);
+    background-image:
+      linear-gradient(hsl(200 30% 14% / 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(200 30% 14% / 0.3) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, hsl(168 100% 48% / 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Orbitron', monospace, sans-serif;
+  }
+
+  .font-mono-data {
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  .font-body {
+    font-family: 'Rajdhani', system-ui, sans-serif;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--glow) / 0.6), 0 0 60px hsl(var(--glow) / 0.2);
+  }
+
+  .cyan-glow {
+    box-shadow: 0 0 20px hsl(var(--glow) / 0.25), 0 0 60px hsl(var(--glow) / 0.08);
+  }
+
+  .glow-box {
+    box-shadow: 0 0 20px hsl(var(--glow) / 0.15), 0 0 60px hsl(var(--glow) / 0.05);
+  }
+
+  .glow-border {
+    border: 1px solid hsl(var(--glow) / 0.25);
+  }
+
+  .glass {
+    background: hsl(var(--surface-glass) / 0.5);
+    backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .glass-strong {
+    background: hsl(var(--surface-glass) / 0.8);
+    backdrop-filter: blur(24px);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+
+  .gradient-glow {
+    background: linear-gradient(135deg, hsl(var(--glow) / 0.08), transparent 60%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(168 60% 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-glow {
+    color: hsl(var(--primary));
+  }
+}
