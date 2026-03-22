@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { X, Check } from "lucide-react";
 
-const before = ["Basic", "Inconsistent", "Random Traffic"];
-const after = ["Professional Brand", "Predictable Leads", "Converted Clients"];
+const before = ["Agency", "Sales", "Heavy"];
+const after = ["Conversation", "Real", "Trust"];
 
 const Outcome = () => (
   <section id="outcome" className="py-24 md:py-32">
@@ -15,10 +15,10 @@ const Outcome = () => (
         className="text-center mb-14"
       >
         <p className="font-heading text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-          OUTCOME SECTION
+          TRANSFORMATION
         </p>
         <h2 className="font-heading text-3xl font-bold tracking-wide md:text-5xl text-foreground">
-          Proven Results
+          How This Feels Different
         </h2>
       </motion.div>
 

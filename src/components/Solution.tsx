@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { Sparkles, Server, Rocket } from "lucide-react";
 
 const solutions = [
-  { icon: Sparkles, title: "BRAND & POSITIONING", desc: "Define your unique value to stand above competitors." },
-  { icon: Server, title: "TECH INFRASTRUCTURE", desc: "Build a powerful, scalable foundation for operations." },
-  { icon: Rocket, title: "GROWTH & ACQUISITION", desc: "Implement engineering-led strategies for new client capture." },
+  { icon: Sparkles, title: "CONSISTENT PRESENCE", desc: "Show up consistently." },
+  { icon: Server, title: "PROPER PRESENTATION", desc: "Present your work properly." },
+  { icon: Rocket, title: "CONVERT ATTENTION", desc: "Turn attention into actual inquiries." },
 ];
 
 const Solution = () => (
@@ -21,9 +21,12 @@ const Solution = () => (
         <p className="font-heading text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground mb-4">
           Our Approach
         </p>
-        <h2 className="font-heading text-3xl font-bold tracking-wide md:text-5xl text-foreground">
-          "We Don't Offer Services. <br className="hidden md:block" />We Build Growth Systems"
+        <h2 className="font-heading text-3xl font-bold tracking-wide md:text-5xl text-foreground mb-6">
+          We help you build that system.
         </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          We don’t just “do marketing” or “post content”. We help you:
+        </p>
       </motion.div>
 
       <div className="grid gap-6 md:grid-cols-3">

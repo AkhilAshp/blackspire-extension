@@ -17,10 +17,10 @@ const CTA = () => (
           FINAL CTA
         </p>
         <h2 className="font-heading text-3xl font-bold tracking-wide md:text-5xl text-foreground mb-4">
-          "Let's Build Your <br className="hidden md:block"/>Growth System"
+          If you’re serious about <br className="hidden md:block"/>building this properly…
         </h2>
-        <p className="text-muted-foreground text-sm md:text-base mb-10">
-          We'll show you what's missing and how to fix it.
+        <p className="text-muted-foreground text-sm md:text-base mb-10 max-w-xl mx-auto">
+          We can walk you through what’s missing right now and how we’d approach it for your business. No pressure — just clarity.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -30,7 +30,7 @@ const CTA = () => (
             rel="noopener noreferrer"
             className="font-heading inline-flex items-center gap-2 rounded-sm bg-primary px-7 py-3.5 text-xs font-bold tracking-widest uppercase text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(168_100%_48%/0.45)] active:scale-[0.97] animate-pulse-glow"
           >
-            Book a Call
+            Get My Growth Plan
           </a>
           <a
             href={WHATSAPP_URL}
@@ -38,7 +38,7 @@ const CTA = () => (
             rel="noopener noreferrer"
             className="font-heading inline-flex items-center gap-2 rounded-sm glow-border px-7 py-3.5 text-xs font-bold tracking-widest uppercase text-foreground transition-all hover:bg-secondary active:scale-[0.97]"
           >
-            Talk on WhatsApp
+            Chat on WhatsApp
           </a>
         </div>
       </motion.div>

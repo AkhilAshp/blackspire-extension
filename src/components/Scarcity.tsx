@@ -11,10 +11,10 @@ const Scarcity = () => (
         className="glass p-8 rounded-lg glow-border"
       >
         <p className="font-heading text-xs font-bold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-          Focus Over Volume
+          Scarcity
         </p>
-        <h2 className="font-heading text-2xl font-bold tracking-wide md:text-4xl text-foreground mb-8">
-          "We work with only 6<br className="hidden md:block"/>businesses per cycle"
+        <h2 className="font-heading text-xl md:text-2xl font-bold tracking-wide text-foreground mb-8 max-w-sm mx-auto leading-relaxed">
+          We keep this limited. We only work with a small number of businesses at a time so we can actually focus and not just "deliver content".
         </h2>
 
         <div className="relative h-3 rounded-full bg-secondary overflow-hidden mb-6">

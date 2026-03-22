@@ -19,12 +19,17 @@ const Hero = () => (
         >
 
 
+          <div className="font-heading text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6 animate-pulse-glow">
+            You focus on your work. We’ll handle the growth.
+          </div>
+
           <h1 className="font-heading text-4xl font-extrabold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl text-foreground max-w-3xl">
-            "Turn Your Business Into a Consistent <span className="text-gradient">Client-Generating System"</span>
+            You don’t need more effort. <br className="hidden md:block"/>
+            <span className="text-gradient">You need a better system.</span>
           </h1>
 
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl font-body">
-            We engineer high-performance growth systems for ambitious businesses, moving beyond generic services to deliver predictable acquisition.
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl font-body max-w-2xl mx-auto">
+            Most businesses don’t struggle because of what they offer — they struggle because people don’t see it, trust it, or act on it. That’s what we solve.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center gap-4">
@@ -32,7 +37,7 @@ const Hero = () => (
               href="#solution"
               className="font-heading inline-flex items-center gap-2 rounded-sm bg-primary px-7 py-3.5 text-xs font-bold tracking-widest uppercase text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(168_100%_48%/0.45)] active:scale-[0.97] animate-pulse-glow"
             >
-              Book a Call
+              Get My Growth Plan
             </a>
             <a
               href={WHATSAPP_URL}
@@ -40,7 +45,7 @@ const Hero = () => (
               rel="noopener noreferrer"
               className="font-heading inline-flex items-center gap-2 rounded-sm glow-border px-7 py-3.5 text-xs font-bold tracking-widest uppercase text-foreground transition-all hover:bg-secondary active:scale-[0.97]"
             >
-              Talk on WhatsApp
+              Chat on WhatsApp
             </a>
           </div>
 
@@ -50,7 +55,7 @@ const Hero = () => (
             transition={{ delay: 0.8, duration: 0.5 }}
             className="mt-8 text-sm font-heading font-medium tracking-wider text-muted-foreground"
           >
-            Limited onboarding — 6 businesses per cycle
+            Only working with a few businesses at a time.
           </motion.div>
         </motion.div>
       </div>

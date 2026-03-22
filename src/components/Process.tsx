@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { num: "1", title: "UNDERSTAND", desc: "Diagnose bottlenecks and define a roadmap to remove confusion and uncertainty." },
-  { num: "2", title: "BUILD", desc: "Build a powerful, scalable foundation to ensure consistency and predictability." },
-  { num: "3", title: "SCALE", desc: "Implement engineering-led strategies and execution to drive predictable scale." },
+  { num: "1", title: "UNDERSTAND", desc: "We understand what you’re doing." },
+  { num: "2", title: "FIX", desc: "We fix how it’s presented." },
+  { num: "3", title: "BUILD", desc: "We build consistency." },
+  { num: "4", title: "IMPROVE", desc: "We improve what works." },
 ];
 
 const Process = () => (
@@ -20,7 +21,7 @@ const Process = () => (
           PROCESS
         </p>
         <h2 className="font-heading text-3xl font-bold tracking-wide md:text-5xl text-foreground">
-          The Process
+          Nothing complicated.
         </h2>
       </motion.div>
 
@@ -46,6 +47,18 @@ const Process = () => (
           </motion.div>
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        className="text-center mt-16"
+      >
+        <p className="text-lg md:text-xl text-muted-foreground font-medium">
+          No guesswork. Just clear steps.
+        </p>
+      </motion.div>
     </div>
   </section>
 );
